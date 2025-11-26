@@ -1,0 +1,14 @@
+# Geçici dosyalar
+*.tmp
+*.log
+
+# Yedek dosyalar
+*~
+*.bak
+
+# İkon oluşturucu (gerek yok GitHub'da)
+icons/ikon-olustur.html
+
+# Duplicate ikonlar
+icons/*(*)*
+

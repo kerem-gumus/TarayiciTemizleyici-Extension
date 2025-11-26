@@ -1,0 +1,182 @@
+================================================================================
+                    TARAYICI TEMİZLEYİCİ PRO - CHROME EKLENTİSİ
+                              Kullanım Kılavuzu v1.0
+================================================================================
+
+🎯 BU EKLENTİ NE YAPAR?
+------------------------
+Bu eklenti, Chromium tabanlı tarayıcılarda (Chrome, Edge, Brave, Opera, Vivaldi)
+tarama verilerinizi otomatik veya manuel olarak temizlemenizi sağlar.
+
+📁 DOSYA YAPISI
+----------------
+TarayiciTemizleyici-Extension/
+├── manifest.json      → Eklenti yapılandırma dosyası
+├── popup.html         → Kullanıcı arayüzü
+├── popup.css          → Stil dosyası (tasarım)
+├── popup.js           → Arayüz JavaScript kodu
+├── background.js      → Arka plan servisi (zamanlayıcı)
+├── KULLANIM.txt       → Bu dosya
+└── icons/
+    ├── ikon-olustur.html  → İkon oluşturma aracı
+    ├── icon16.png         → 16x16 ikon (oluşturulacak)
+    ├── icon48.png         → 48x48 ikon (oluşturulacak)
+    └── icon128.png        → 128x128 ikon (oluşturulacak)
+
+================================================================================
+                              KURULUM ADIMLARI
+================================================================================
+
+ADIM 1: İKONLARI OLUŞTURUN
+--------------------------
+1. "icons" klasöründeki "ikon-olustur.html" dosyasını tarayıcıda açın
+2. "Tüm İkonları İndir" butonuna tıklayın
+3. İndirilen 3 PNG dosyasını (icon16.png, icon48.png, icon128.png) 
+   "icons" klasörüne taşıyın
+
+ADIM 2: EKLENTİYİ CHROME'A YÜKLEYİN
+------------------------------------
+1. Chrome tarayıcısını açın
+2. Adres çubuğuna yazın: chrome://extensions
+3. Sağ üst köşedeki "Geliştirici modu" anahtarını AÇIN
+4. "Paketlenmemiş öğe yükle" butonuna tıklayın
+5. "TarayiciTemizleyici-Extension" klasörünü seçin
+6. "Klasör Seç" butonuna tıklayın
+
+✅ Eklenti yüklendi! Araç çubuğunda 🧹 ikonu görünecektir.
+
+================================================================================
+                              EKLENTİ ÖZELLİKLERİ
+================================================================================
+
+📋 1. TEMİZLİK SEKMESİ
+-----------------------
+Bu sekmede hangi verilerin temizleneceğini seçebilirsiniz:
+
+✓ Tarama Geçmişi     → Ziyaret ettiğiniz siteler
+✓ Çerezler           → Site oturum verileri (giriş bilgileri silinir!)
+✓ Önbellek           → Geçici dosyalar ve resimler
+✓ İndirme Geçmişi    → İndirilen dosya listesi
+✓ Form Verileri      → Otomatik doldurma bilgileri
+✓ Yerel Depolama     → Site verileri (localStorage)
+✓ IndexedDB          → Gelişmiş site veritabanları
+✓ Kayıtlı Şifreler   → ⚠️ DİKKAT: Geri alınamaz!
+
+🕐 ZAMAN ARALIĞI SEÇENEKLERİ:
+- Son 1 saat
+- Son 24 saat
+- Son 1 hafta
+- Son 1 ay
+- Tüm zamanlar
+
+🚀 "Şimdi Temizle" → Seçili verileri anında temizler
+
+================================================================================
+
+⏰ 2. ZAMANLAMA SEKMESİ
+------------------------
+Otomatik temizlik için 3 farklı seçenek:
+
+1️⃣ TARAYICI AÇILIŞINDA
+   → Chrome her açıldığında otomatik temizlik yapar
+   → Gizlilik odaklı kullanıcılar için ideal
+
+2️⃣ TARAYICI KAPANIŞINDA
+   → Chrome kapanırken otomatik temizlik yapar
+   → İzlerinizi silmek için mükemmel
+
+3️⃣ ZAMANLAY ICI İLE
+   → Belirli aralıklarla temizlik yapar
+   → Örnek: Her 1 saat, her 30 dakika
+   → Sürekli gizlilik için en iyi seçenek
+
+💡 İPUCU: Birden fazla seçeneği aynı anda aktifleştirebilirsiniz!
+   Örnek: Hem açılışta hem de her 2 saatte bir temizlik
+
+================================================================================
+
+⚙️ 3. AYARLAR SEKMESİ
+----------------------
+
+🔔 Bildirim Göster     → Temizlik sonrası bildirim alın
+🔊 Ses Efekti          → Temizlik bitince ses çalsın
+❓ Onay İste           → Manuel temizlikten önce onay istesin
+
+📊 İSTATİSTİKLER:
+- Toplam kaç temizlik yapıldığı
+- Son temizlik zamanı
+
+🔄 "Ayarları Sıfırla" → Tüm ayarları varsayılana döndürür
+
+================================================================================
+                              ÖNEMLİ UYARILAR
+================================================================================
+
+⚠️ DİKKAT - ÇEREZLERİ TEMİZLERSENİZ:
+   - Tüm sitelerden çıkış yapılır
+   - Tekrar giriş yapmanız gerekir
+
+⚠️ DİKKAT - ŞİFRELERİ TEMİZLERSENİZ:
+   - Kaydedilmiş şifreler SİLİNİR
+   - Bu işlem GERİ ALINAMAZ!
+
+⚠️ DİKKAT - FORM VERİLERİNİ TEMİZLERSENİZ:
+   - Otomatik doldurma bilgileri silinir
+
+================================================================================
+                              SSS (Sık Sorulan Sorular)
+================================================================================
+
+S: Eklenti çalışmıyor, ne yapmalıyım?
+C: 1. Chrome://extensions sayfasında eklentinin aktif olduğunu kontrol edin
+   2. Eklentiyi kaldırıp tekrar yükleyin
+   3. Chrome'u yeniden başlatın
+
+S: Zamanlayıcı çalışmıyor?
+C: Chrome arka planda çalışıyor olmalı. Tamamen kapatırsanız zamanlayıcı durur.
+
+S: Kapanışta temizlik çalışmıyor?
+C: Son pencereyi kapattığınızda çalışır. Task Manager'dan kapatırsanız çalışmaz.
+
+S: Belirli siteler için çerez tutabilir miyim?
+C: Bu versiyon tüm çerezleri temizler. İstisna özelliği gelecek versiyonda eklenecek.
+
+================================================================================
+                              TEKNİK BİLGİLER
+================================================================================
+
+KULLANILAN CHROME API'LERİ:
+- chrome.browsingData  → Veri temizleme
+- chrome.storage       → Ayarları kaydetme
+- chrome.alarms        → Zamanlayıcı
+- chrome.windows       → Pencere olayları
+- chrome.runtime       → Eklenti yaşam döngüsü
+
+DESTEKLENEN TARAYICILAR:
+- Google Chrome (v88+)
+- Microsoft Edge (Chromium)
+- Brave Browser
+- Opera (Chromium)
+- Vivaldi
+- Diğer Chromium tabanlı tarayıcılar
+
+================================================================================
+
+💡 İPUCU: En iyi gizlilik için şu ayarları kullanın:
+   ✓ Tarama Geçmişi
+   ✓ Çerezler
+   ✓ Önbellek
+   ✓ Yerel Depolama
+   + Hem açılışta hem kapanışta aktif
+
+================================================================================
+                              İletişim & Destek
+================================================================================
+
+Sorularınız veya önerileriniz için geliştiriciyle iletişime geçin.
+
+Versiyon: 1.0.0
+Son Güncelleme: Kasım 2025
+
+================================================================================
+

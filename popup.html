@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarayıcı Temizleyici Pro</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Başlık Bölümü -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🧹</span>
+                <h1>Tarayıcı Temizleyici</h1>
+            </div>
+            <p class="subtitle">Verilerinizi güvenle temizleyin</p>
+        </header>
+
+        <!-- Tab Menüsü -->
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="temizlik">🗑️ Temizlik</button>
+            <button class="tab-btn" data-tab="zamanlama">⏰ Zamanlama</button>
+            <button class="tab-btn" data-tab="ayarlar">⚙️ Ayarlar</button>
+        </nav>
+
+        <!-- Tab İçerikleri -->
+        <div class="tab-content">
+            
+            <!-- TEMİZLİK SEKMESI -->
+            <div id="temizlik" class="tab-panel active">
+                <div class="section">
+                    <h3 class="section-title">📋 Temizlenecek Verileri Seçin</h3>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="history" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">
+                                <span class="label-title">🌐 Tarama Geçmişi</span>
+                                <span class="label-desc">Ziyaret ettiğiniz siteler</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="cookies" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">
+                                <span class="label-title">🍪 Çerezler</span>
+                                <span class="label-desc">Site oturum verileri</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="cache" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">
+                                <span class="label-title">📦 Önbellek</span>
+                                <span class="label-desc">Geçici dosyalar ve resimler</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="downloads">
+                            <span class="checkmark"></span>
+                            <span class="label-text">
+                                <span class="label-title">📥 İndirme Geçmişi</span>
+                                <span class="label-desc">İndirilen dosya listesi</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="formData">
+                            <span class="checkmark"></span>
+                            <span class="label-text">
+                                <span class="label-title">📝 Form Verileri</span>
+                                <span class="label-desc">Otomatik doldurma bilgileri</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="localStorage" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">
+                                <span class="label-title">💾 Yerel Depolama</span>
+                                <span class="label-desc">Site verileri (localStorage)</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="indexedDB">
+                            <span class="checkmark"></span>
+                            <span class="label-text">
+                                <span class="label-title">🗄️ IndexedDB</span>
+                                <span class="label-desc">Gelişmiş site veritabanları</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item danger">
+                            <input type="checkbox" id="passwords">
+                            <span class="checkmark"></span>
+                            <span class="label-text">
+                                <span class="label-title">🔐 Kayıtlı Şifreler</span>
+                                <span class="label-desc">⚠️ Dikkat: Geri alınamaz!</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Zaman Aralığı Seçimi -->
+                    <div class="time-range">
+                        <h4>🕐 Zaman Aralığı</h4>
+                        <select id="timeRange">
+                            <option value="hour">Son 1 saat</option>
+                            <option value="day">Son 24 saat</option>
+                            <option value="week">Son 1 hafta</option>
+                            <option value="month">Son 1 ay</option>
+                            <option value="all" selected>Tüm zamanlar</option>
+                        </select>
+                    </div>
+
+                    <!-- Hızlı Seçim Butonları -->
+                    <div class="quick-select">
+                        <button id="selectAll" class="btn-secondary">✅ Tümünü Seç</button>
+                        <button id="selectNone" class="btn-secondary">❌ Hiçbirini Seçme</button>
+                    </div>
+
+                    <!-- Temizle Butonu -->
+                    <button id="cleanNow" class="btn-primary">
+                        <span class="btn-icon">🚀</span>
+                        <span>Şimdi Temizle</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ZAMANLAMA SEKMESİ -->
+            <div id="zamanlama" class="tab-panel">
+                <div class="section">
+                    <h3 class="section-title">⏱️ Otomatik Temizlik Zamanlaması</h3>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-item toggle-item">
+                            <input type="checkbox" id="cleanOnStartup">
+                            <span class="toggle"></span>
+                            <span class="label-text">
+                                <span class="label-title">🚀 Tarayıcı Açılışında</span>
+                                <span class="label-desc">Chrome her açıldığında temizle</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item toggle-item">
+                            <input type="checkbox" id="cleanOnShutdown">
+                            <span class="toggle"></span>
+                            <span class="label-text">
+                                <span class="label-title">🔒 Tarayıcı Kapanışında</span>
+                                <span class="label-desc">Chrome kapanırken temizle</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item toggle-item">
+                            <input type="checkbox" id="cleanOnInterval">
+                            <span class="toggle"></span>
+                            <span class="label-text">
+                                <span class="label-title">⏰ Zamanlayıcı ile</span>
+                                <span class="label-desc">Belirli aralıklarla temizle</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Zamanlayıcı Ayarları -->
+                    <div id="intervalSettings" class="interval-settings hidden">
+                        <h4>🕐 Temizlik Aralığı</h4>
+                        <div class="interval-row">
+                            <input type="number" id="intervalValue" min="1" max="24" value="1">
+                            <select id="intervalUnit">
+                                <option value="minutes">Dakika</option>
+                                <option value="hours" selected>Saat</option>
+                            </select>
+                        </div>
+                        <p class="interval-info">
+                            <span id="nextClean">Sonraki temizlik: --</span>
+                        </p>
+                    </div>
+
+                    <!-- Zamanlama Durumu -->
+                    <div class="schedule-status">
+                        <div class="status-card">
+                            <span class="status-icon" id="statusIcon">⏸️</span>
+                            <span class="status-text" id="statusText">Otomatik temizlik kapalı</span>
+                        </div>
+                    </div>
+
+                    <button id="saveSchedule" class="btn-primary">
+                        <span class="btn-icon">💾</span>
+                        <span>Zamanlamayı Kaydet</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- AYARLAR SEKMESİ -->
+            <div id="ayarlar" class="tab-panel">
+                <div class="section">
+                    <h3 class="section-title">⚙️ Genel Ayarlar</h3>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-item toggle-item">
+                            <input type="checkbox" id="showNotification" checked>
+                            <span class="toggle"></span>
+                            <span class="label-text">
+                                <span class="label-title">🔔 Bildirim Göster</span>
+                                <span class="label-desc">Temizlik sonrası bildirim al</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item toggle-item">
+                            <input type="checkbox" id="soundEnabled">
+                            <span class="toggle"></span>
+                            <span class="label-text">
+                                <span class="label-title">🔊 Ses Efekti</span>
+                                <span class="label-desc">Temizlik bitince ses çal</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox-item toggle-item">
+                            <input type="checkbox" id="confirmBeforeClean">
+                            <span class="toggle"></span>
+                            <span class="label-text">
+                                <span class="label-title">❓ Onay İste</span>
+                                <span class="label-desc">Temizlemeden önce sor</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- İstatistikler -->
+                    <div class="stats-section">
+                        <h4>📊 İstatistikler</h4>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-value" id="totalCleans">0</span>
+                                <span class="stat-label">Toplam Temizlik</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value" id="lastClean">Hiç</span>
+                                <span class="stat-label">Son Temizlik</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="resetSettings" class="btn-danger">
+                        <span class="btn-icon">🔄</span>
+                        <span>Ayarları Sıfırla</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bildirim Alanı -->
+        <div id="notification" class="notification hidden">
+            <span class="notification-icon">✅</span>
+            <span class="notification-text">İşlem başarılı!</span>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Tarayıcı Temizleyici Pro v1.0</p>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+
