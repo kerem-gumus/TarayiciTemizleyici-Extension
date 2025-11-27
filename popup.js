@@ -1,6 +1,7 @@
 // ================================================
 // TARAYICI TEMİZLEYİCİ PRO - ANA JAVASCRIPT
 // Popup arayüzü için tüm işlemleri yönetir
+// Çoklu dil desteği (i18n) ile
 // ================================================
 
 // ============================================
@@ -47,11 +48,51 @@ const defaultSettings = {
 let currentSettings = { ...defaultSettings };
 
 // ============================================
+// ÇOKLİ DİL DESTEĞİ (i18n)
+// ============================================
+
+// Mesaj al fonksiyonu
+function getMessage(key, substitutions = null) {
+    try {
+        return chrome.i18n.getMessage(key, substitutions) || key;
+    } catch (e) {
+        return key;
+    }
+}
+
+// Tüm data-i18n elementlerini güncelle
+function localizeUI() {
+    // data-i18n attribute'u olan tüm elementleri bul
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const message = getMessage(key);
+        if (message && message !== key) {
+            element.textContent = message;
+        }
+    });
+    
+    // Select option'ları için özel işlem
+    document.querySelectorAll('select option[data-i18n]').forEach(option => {
+        const key = option.getAttribute('data-i18n');
+        const message = getMessage(key);
+        if (message && message !== key) {
+            option.textContent = message;
+        }
+    });
+    
+    // Title attribute'unu güncelle
+    document.title = getMessage('extName');
+}
+
+// ============================================
 // SAYFA YÜKLENDİĞİNDE ÇALIŞACAK KODLAR
 // ============================================
 
 document.addEventListener('DOMContentLoaded', async () => {
     console.log('Tarayıcı Temizleyici Pro yüklendi!');
+    
+    // Önce dili uygula
+    localizeUI();
     
     // Kaydedilmiş ayarları yükle
     await loadSettings();
@@ -174,27 +215,36 @@ function updateStats() {
             const date = new Date(currentSettings.stats.lastClean);
             lastClean.textContent = formatDate(date);
         } else {
-            lastClean.textContent = 'Hiç';
+            lastClean.textContent = getMessage('statsNever');
         }
     }
 }
 
-// Tarih formatlama
+// Tarih formatlama (i18n destekli)
 function formatDate(date) {
     const now = new Date();
     const diff = now - date;
     
     // 1 dakikadan az
-    if (diff < 60000) return 'Az önce';
+    if (diff < 60000) return getMessage('timeAgo_justNow');
     // 1 saatten az
-    if (diff < 3600000) return Math.floor(diff / 60000) + ' dk önce';
+    if (diff < 3600000) {
+        const mins = Math.floor(diff / 60000);
+        return getMessage('timeAgo_minutes', [mins.toString()]);
+    }
     // 24 saatten az
-    if (diff < 86400000) return Math.floor(diff / 3600000) + ' saat önce';
+    if (diff < 86400000) {
+        const hours = Math.floor(diff / 3600000);
+        return getMessage('timeAgo_hours', [hours.toString()]);
+    }
     // 7 günden az
-    if (diff < 604800000) return Math.floor(diff / 86400000) + ' gün önce';
+    if (diff < 604800000) {
+        const days = Math.floor(diff / 86400000);
+        return getMessage('timeAgo_days', [days.toString()]);
+    }
     
     // Tam tarih
-    return date.toLocaleDateString('tr-TR');
+    return date.toLocaleDateString();
 }
 
 // Zamanlama durumunu güncelle
@@ -206,20 +256,20 @@ function updateScheduleStatus() {
     
     let statusMessages = [];
     
-    if (cleanOnStartup) statusMessages.push('Açılışta');
-    if (cleanOnShutdown) statusMessages.push('Kapanışta');
+    if (cleanOnStartup) statusMessages.push(getMessage('scheduleOnStartup').replace('🚀 ', ''));
+    if (cleanOnShutdown) statusMessages.push(getMessage('scheduleOnShutdown').replace('🔒 ', ''));
     if (cleanOnInterval) {
         const { intervalValue, intervalUnit } = currentSettings.schedule;
-        const unitText = intervalUnit === 'hours' ? 'saat' : 'dakika';
-        statusMessages.push(`Her ${intervalValue} ${unitText}`);
+        const unitText = intervalUnit === 'hours' ? getMessage('intervalHours') : getMessage('intervalMinutes');
+        statusMessages.push(`${intervalValue} ${unitText}`);
     }
     
     if (statusMessages.length > 0) {
         statusIcon.textContent = '✅';
-        statusText.textContent = 'Aktif: ' + statusMessages.join(', ');
+        statusText.textContent = getMessage('statusActive') + ' ' + statusMessages.join(', ');
     } else {
         statusIcon.textContent = '⏸️';
-        statusText.textContent = 'Otomatik temizlik kapalı';
+        statusText.textContent = getMessage('statusOff');
     }
 }
 
@@ -242,9 +292,9 @@ async function updateNextCleanTime() {
         const alarm = await chrome.alarms.get('cleaningAlarm');
         if (alarm) {
             const date = new Date(alarm.scheduledTime);
-            nextCleanEl.textContent = `Sonraki temizlik: ${date.toLocaleTimeString('tr-TR')}`;
+            nextCleanEl.textContent = `${getMessage('nextClean')} ${date.toLocaleTimeString()}`;
         } else {
-            nextCleanEl.textContent = 'Sonraki temizlik: --';
+            nextCleanEl.textContent = `${getMessage('nextClean')} --`;
         }
     } catch (error) {
         console.error('Alarm bilgisi alınamadı:', error);
@@ -293,7 +343,7 @@ function initEventListeners() {
                 if (checkbox) checkbox.checked = true;
             });
             saveSettings();
-            showNotification('Tüm seçenekler işaretlendi', 'success');
+            showNotification(getMessage('msgAllSelected'), 'success');
         });
     }
     
@@ -305,7 +355,7 @@ function initEventListeners() {
                 if (checkbox) checkbox.checked = false;
             });
             saveSettings();
-            showNotification('Tüm seçimler kaldırıldı', 'success');
+            showNotification(getMessage('msgNoneSelected'), 'success');
         });
     }
     
@@ -403,7 +453,7 @@ async function handleCleanNow() {
     
     // Onay kontrolü
     if (currentSettings.general.confirmBeforeClean) {
-        if (!confirm('Seçili verileri temizlemek istediğinizden emin misiniz?')) {
+        if (!confirm(getMessage('confirmClean'))) {
             return;
         }
     }
@@ -411,7 +461,7 @@ async function handleCleanNow() {
     // Butonu devre dışı bırak ve yükleniyor göster
     btn.classList.add('loading');
     btn.disabled = true;
-    btn.innerHTML = '<span class="btn-icon">⏳</span><span>Temizleniyor...</span>';
+    btn.innerHTML = `<span class="btn-icon">⏳</span><span>${getMessage('btnCleaning')}</span>`;
     
     try {
         // Background script'e temizlik isteği gönder
@@ -428,18 +478,18 @@ async function handleCleanNow() {
             await saveSettings();
             updateStats();
             
-            showNotification('Temizlik başarıyla tamamlandı! ✨', 'success');
+            showNotification(getMessage('msgCleanSuccess'), 'success');
         } else {
-            showNotification('Temizlik sırasında hata oluştu', 'error');
+            showNotification(getMessage('msgError'), 'error');
         }
     } catch (error) {
         console.error('Temizlik hatası:', error);
-        showNotification('Bir hata oluştu: ' + error.message, 'error');
+        showNotification(getMessage('msgError') + ': ' + error.message, 'error');
     } finally {
         // Butonu normale döndür
         btn.classList.remove('loading');
         btn.disabled = false;
-        btn.innerHTML = '<span class="btn-icon">🚀</span><span>Şimdi Temizle</span>';
+        btn.innerHTML = `<span class="btn-icon">🚀</span><span>${getMessage('btnCleanNow')}</span>`;
     }
 }
 
@@ -458,19 +508,19 @@ async function handleSaveSchedule() {
         if (response && response.success) {
             updateScheduleStatus();
             await updateNextCleanTime();
-            showNotification('Zamanlama kaydedildi! ⏰', 'success');
+            showNotification(getMessage('msgScheduleSaved'), 'success');
         } else {
-            showNotification('Zamanlama kaydedilemedi', 'error');
+            showNotification(getMessage('msgError'), 'error');
         }
     } catch (error) {
         console.error('Zamanlama kaydetme hatası:', error);
-        showNotification('Bir hata oluştu', 'error');
+        showNotification(getMessage('msgError'), 'error');
     }
 }
 
 // Ayarları Sıfırla
 async function handleResetSettings() {
-    if (!confirm('Tüm ayarları varsayılana döndürmek istediğinizden emin misiniz?')) {
+    if (!confirm(getMessage('confirmReset'))) {
         return;
     }
     
@@ -485,10 +535,10 @@ async function handleResetSettings() {
         // Arayüzü güncelle
         updateUI();
         
-        showNotification('Ayarlar sıfırlandı', 'success');
+        showNotification(getMessage('msgSettingsReset'), 'success');
     } catch (error) {
         console.error('Ayarlar sıfırlanırken hata:', error);
-        showNotification('Bir hata oluştu', 'error');
+        showNotification(getMessage('msgError'), 'error');
     }
 }
 
@@ -570,4 +620,3 @@ function getTimeRangeMs(range) {
 }
 
 console.log('Popup.js yükleme tamamlandı!');
-

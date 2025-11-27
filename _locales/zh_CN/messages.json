@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "浏览器清理专家",
+    "description": "扩展名称"
+  },
+  "extDescription": {
+    "message": "自动或手动清理浏览器数据。历史记录、Cookie、缓存等！",
+    "description": "扩展描述"
+  },
+  "headerTitle": {
+    "message": "浏览器清理器",
+    "description": "标题"
+  },
+  "headerSubtitle": {
+    "message": "安全清理您的数据",
+    "description": "副标题"
+  },
+  "tabCleaning": {
+    "message": "🗑️ 清理",
+    "description": "清理标签"
+  },
+  "tabSchedule": {
+    "message": "⏰ 定时",
+    "description": "定时标签"
+  },
+  "tabSettings": {
+    "message": "⚙️ 设置",
+    "description": "设置标签"
+  },
+  "sectionSelectData": {
+    "message": "📋 选择要清理的数据",
+    "description": "数据选择部分标题"
+  },
+  "dataHistory": {
+    "message": "🌐 浏览历史",
+    "description": "浏览历史"
+  },
+  "dataHistoryDesc": {
+    "message": "您访问过的网站",
+    "description": "浏览历史描述"
+  },
+  "dataCookies": {
+    "message": "🍪 Cookies",
+    "description": "Cookies"
+  },
+  "dataCookiesDesc": {
+    "message": "网站会话数据",
+    "description": "Cookies描述"
+  },
+  "dataCache": {
+    "message": "📦 缓存",
+    "description": "缓存"
+  },
+  "dataCacheDesc": {
+    "message": "临时文件和图片",
+    "description": "缓存描述"
+  },
+  "dataDownloads": {
+    "message": "📥 下载历史",
+    "description": "下载历史"
+  },
+  "dataDownloadsDesc": {
+    "message": "已下载文件列表",
+    "description": "下载历史描述"
+  },
+  "dataFormData": {
+    "message": "📝 表单数据",
+    "description": "表单数据"
+  },
+  "dataFormDataDesc": {
+    "message": "自动填充信息",
+    "description": "表单数据描述"
+  },
+  "dataLocalStorage": {
+    "message": "💾 本地存储",
+    "description": "本地存储"
+  },
+  "dataLocalStorageDesc": {
+    "message": "网站数据 (localStorage)",
+    "description": "本地存储描述"
+  },
+  "dataIndexedDB": {
+    "message": "🗄️ IndexedDB",
+    "description": "IndexedDB"
+  },
+  "dataIndexedDBDesc": {
+    "message": "高级网站数据库",
+    "description": "IndexedDB描述"
+  },
+  "dataPasswords": {
+    "message": "🔐 已保存的密码",
+    "description": "密码"
+  },
+  "dataPasswordsDesc": {
+    "message": "⚠️ 警告：无法撤销！",
+    "description": "密码警告"
+  },
+  "timeRangeTitle": {
+    "message": "🕐 时间范围",
+    "description": "时间范围标题"
+  },
+  "timeHour": {
+    "message": "过去1小时",
+    "description": "过去1小时"
+  },
+  "timeDay": {
+    "message": "过去24小时",
+    "description": "过去24小时"
+  },
+  "timeWeek": {
+    "message": "过去1周",
+    "description": "过去1周"
+  },
+  "timeMonth": {
+    "message": "过去1个月",
+    "description": "过去1个月"
+  },
+  "timeAll": {
+    "message": "所有时间",
+    "description": "所有时间"
+  },
+  "btnSelectAll": {
+    "message": "✅ 全选",
+    "description": "全选按钮"
+  },
+  "btnSelectNone": {
+    "message": "❌ 取消全选",
+    "description": "取消全选按钮"
+  },
+  "btnCleanNow": {
+    "message": "立即清理",
+    "description": "清理按钮"
+  },
+  "btnCleaning": {
+    "message": "清理中...",
+    "description": "清理状态"
+  },
+  "scheduleTitle": {
+    "message": "⏱️ 自动清理计划",
+    "description": "计划标题"
+  },
+  "scheduleOnStartup": {
+    "message": "🚀 浏览器启动时",
+    "description": "启动时清理"
+  },
+  "scheduleOnStartupDesc": {
+    "message": "Chrome打开时清理",
+    "description": "启动时清理描述"
+  },
+  "scheduleOnShutdown": {
+    "message": "🔒 浏览器关闭时",
+    "description": "关闭时清理"
+  },
+  "scheduleOnShutdownDesc": {
+    "message": "Chrome关闭时清理",
+    "description": "关闭时清理描述"
+  },
+  "scheduleOnInterval": {
+    "message": "⏰ 定时清理",
+    "description": "定时器"
+  },
+  "scheduleOnIntervalDesc": {
+    "message": "按特定间隔清理",
+    "description": "定时器描述"
+  },
+  "intervalTitle": {
+    "message": "🕐 清理间隔",
+    "description": "间隔标题"
+  },
+  "intervalMinutes": {
+    "message": "分钟",
+    "description": "分钟"
+  },
+  "intervalHours": {
+    "message": "小时",
+    "description": "小时"
+  },
+  "nextClean": {
+    "message": "下次清理：",
+    "description": "下次清理"
+  },
+  "statusOff": {
+    "message": "自动清理已关闭",
+    "description": "关闭状态"
+  },
+  "statusActive": {
+    "message": "已激活：",
+    "description": "激活状态"
+  },
+  "btnSaveSchedule": {
+    "message": "保存计划",
+    "description": "保存按钮"
+  },
+  "settingsTitle": {
+    "message": "⚙️ 常规设置",
+    "description": "设置标题"
+  },
+  "settingNotification": {
+    "message": "🔔 显示通知",
+    "description": "通知设置"
+  },
+  "settingNotificationDesc": {
+    "message": "清理后收到通知",
+    "description": "通知描述"
+  },
+  "settingSound": {
+    "message": "🔊 声音效果",
+    "description": "声音设置"
+  },
+  "settingSoundDesc": {
+    "message": "完成时播放声音",
+    "description": "声音描述"
+  },
+  "settingConfirm": {
+    "message": "❓ 请求确认",
+    "description": "确认设置"
+  },
+  "settingConfirmDesc": {
+    "message": "清理前询问",
+    "description": "确认描述"
+  },
+  "statsTitle": {
+    "message": "📊 统计",
+    "description": "统计标题"
+  },
+  "statsTotalCleans": {
+    "message": "总清理次数",
+    "description": "总清理次数"
+  },
+  "statsLastClean": {
+    "message": "上次清理",
+    "description": "上次清理"
+  },
+  "statsNever": {
+    "message": "从未",
+    "description": "从未"
+  },
+  "btnResetSettings": {
+    "message": "重置设置",
+    "description": "重置按钮"
+  },
+  "msgSuccess": {
+    "message": "操作成功！",
+    "description": "成功消息"
+  },
+  "msgCleanSuccess": {
+    "message": "清理成功完成！✨",
+    "description": "清理成功消息"
+  },
+  "msgScheduleSaved": {
+    "message": "计划已保存！⏰",
+    "description": "计划已保存"
+  },
+  "msgSettingsReset": {
+    "message": "设置已重置",
+    "description": "设置已重置"
+  },
+  "msgAllSelected": {
+    "message": "已选择所有选项",
+    "description": "全部已选"
+  },
+  "msgNoneSelected": {
+    "message": "已清除所有选择",
+    "description": "全部未选"
+  },
+  "msgError": {
+    "message": "发生错误",
+    "description": "错误消息"
+  },
+  "confirmClean": {
+    "message": "您确定要清理所选数据吗？",
+    "description": "清理确认"
+  },
+  "confirmReset": {
+    "message": "您确定要将所有设置重置为默认值吗？",
+    "description": "重置确认"
+  },
+  "footerText": {
+    "message": "浏览器清理专家 v1.0",
+    "description": "页脚文字"
+  },
+  "timeAgo_justNow": {
+    "message": "刚刚",
+    "description": "刚刚"
+  },
+  "timeAgo_minutes": {
+    "message": "$1 分钟前",
+    "description": "分钟前",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "timeAgo_hours": {
+    "message": "$1 小时前",
+    "description": "小时前",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "timeAgo_days": {
+    "message": "$1 天前",
+    "description": "天前",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  }
+}
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarayıcı Temizleyici Pro</title>
+    <title data-i18n="extName">Tarayıcı Temizleyici Pro</title>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -12,16 +12,16 @@
         <header class="header">
             <div class="logo">
                 <span class="logo-icon">🧹</span>
-                <h1>Tarayıcı Temizleyici</h1>
+                <h1 data-i18n="headerTitle">Tarayıcı Temizleyici</h1>
             </div>
-            <p class="subtitle">Verilerinizi güvenle temizleyin</p>
+            <p class="subtitle" data-i18n="headerSubtitle">Verilerinizi güvenle temizleyin</p>
         </header>
 
         <!-- Tab Menüsü -->
         <nav class="tabs">
-            <button class="tab-btn active" data-tab="temizlik">🗑️ Temizlik</button>
-            <button class="tab-btn" data-tab="zamanlama">⏰ Zamanlama</button>
-            <button class="tab-btn" data-tab="ayarlar">⚙️ Ayarlar</button>
+            <button class="tab-btn active" data-tab="temizlik" data-i18n="tabCleaning">🗑️ Temizlik</button>
+            <button class="tab-btn" data-tab="zamanlama" data-i18n="tabSchedule">⏰ Zamanlama</button>
+            <button class="tab-btn" data-tab="ayarlar" data-i18n="tabSettings">⚙️ Ayarlar</button>
         </nav>
 
         <!-- Tab İçerikleri -->
@@ -30,15 +30,15 @@
             <!-- TEMİZLİK SEKMESI -->
             <div id="temizlik" class="tab-panel active">
                 <div class="section">
-                    <h3 class="section-title">📋 Temizlenecek Verileri Seçin</h3>
+                    <h3 class="section-title" data-i18n="sectionSelectData">📋 Temizlenecek Verileri Seçin</h3>
                     
                     <div class="checkbox-group">
                         <label class="checkbox-item">
                             <input type="checkbox" id="history" checked>
                             <span class="checkmark"></span>
                             <span class="label-text">
-                                <span class="label-title">🌐 Tarama Geçmişi</span>
-                                <span class="label-desc">Ziyaret ettiğiniz siteler</span>
+                                <span class="label-title" data-i18n="dataHistory">🌐 Tarama Geçmişi</span>
+                                <span class="label-desc" data-i18n="dataHistoryDesc">Ziyaret ettiğiniz siteler</span>
                             </span>
                         </label>
 
@@ -46,8 +46,8 @@
                             <input type="checkbox" id="cookies" checked>
                             <span class="checkmark"></span>
                             <span class="label-text">
-                                <span class="label-title">🍪 Çerezler</span>
-                                <span class="label-desc">Site oturum verileri</span>
+                                <span class="label-title" data-i18n="dataCookies">🍪 Çerezler</span>
+                                <span class="label-desc" data-i18n="dataCookiesDesc">Site oturum verileri</span>
                             </span>
                         </label>
 
@@ -55,8 +55,8 @@
                             <input type="checkbox" id="cache" checked>
                             <span class="checkmark"></span>
                             <span class="label-text">
-                                <span class="label-title">📦 Önbellek</span>
-                                <span class="label-desc">Geçici dosyalar ve resimler</span>
+                                <span class="label-title" data-i18n="dataCache">📦 Önbellek</span>
+                                <span class="label-desc" data-i18n="dataCacheDesc">Geçici dosyalar ve resimler</span>
                             </span>
                         </label>
 
@@ -64,8 +64,8 @@
                             <input type="checkbox" id="downloads">
                             <span class="checkmark"></span>
                             <span class="label-text">
-                                <span class="label-title">📥 İndirme Geçmişi</span>
-                                <span class="label-desc">İndirilen dosya listesi</span>
+                                <span class="label-title" data-i18n="dataDownloads">📥 İndirme Geçmişi</span>
+                                <span class="label-desc" data-i18n="dataDownloadsDesc">İndirilen dosya listesi</span>
                             </span>
                         </label>
 
@@ -73,8 +73,8 @@
                             <input type="checkbox" id="formData">
                             <span class="checkmark"></span>
                             <span class="label-text">
-                                <span class="label-title">📝 Form Verileri</span>
-                                <span class="label-desc">Otomatik doldurma bilgileri</span>
+                                <span class="label-title" data-i18n="dataFormData">📝 Form Verileri</span>
+                                <span class="label-desc" data-i18n="dataFormDataDesc">Otomatik doldurma bilgileri</span>
                             </span>
                         </label>
 
@@ -82,8 +82,8 @@
                             <input type="checkbox" id="localStorage" checked>
                             <span class="checkmark"></span>
                             <span class="label-text">
-                                <span class="label-title">💾 Yerel Depolama</span>
-                                <span class="label-desc">Site verileri (localStorage)</span>
+                                <span class="label-title" data-i18n="dataLocalStorage">💾 Yerel Depolama</span>
+                                <span class="label-desc" data-i18n="dataLocalStorageDesc">Site verileri (localStorage)</span>
                             </span>
                         </label>
 
@@ -91,8 +91,8 @@
                             <input type="checkbox" id="indexedDB">
                             <span class="checkmark"></span>
                             <span class="label-text">
-                                <span class="label-title">🗄️ IndexedDB</span>
-                                <span class="label-desc">Gelişmiş site veritabanları</span>
+                                <span class="label-title" data-i18n="dataIndexedDB">🗄️ IndexedDB</span>
+                                <span class="label-desc" data-i18n="dataIndexedDBDesc">Gelişmiş site veritabanları</span>
                             </span>
                         </label>
 
@@ -100,34 +100,34 @@
                             <input type="checkbox" id="passwords">
                             <span class="checkmark"></span>
                             <span class="label-text">
-                                <span class="label-title">🔐 Kayıtlı Şifreler</span>
-                                <span class="label-desc">⚠️ Dikkat: Geri alınamaz!</span>
+                                <span class="label-title" data-i18n="dataPasswords">🔐 Kayıtlı Şifreler</span>
+                                <span class="label-desc" data-i18n="dataPasswordsDesc">⚠️ Dikkat: Geri alınamaz!</span>
                             </span>
                         </label>
                     </div>
 
                     <!-- Zaman Aralığı Seçimi -->
                     <div class="time-range">
-                        <h4>🕐 Zaman Aralığı</h4>
+                        <h4 data-i18n="timeRangeTitle">🕐 Zaman Aralığı</h4>
                         <select id="timeRange">
-                            <option value="hour">Son 1 saat</option>
-                            <option value="day">Son 24 saat</option>
-                            <option value="week">Son 1 hafta</option>
-                            <option value="month">Son 1 ay</option>
-                            <option value="all" selected>Tüm zamanlar</option>
+                            <option value="hour" data-i18n="timeHour">Son 1 saat</option>
+                            <option value="day" data-i18n="timeDay">Son 24 saat</option>
+                            <option value="week" data-i18n="timeWeek">Son 1 hafta</option>
+                            <option value="month" data-i18n="timeMonth">Son 1 ay</option>
+                            <option value="all" selected data-i18n="timeAll">Tüm zamanlar</option>
                         </select>
                     </div>
 
                     <!-- Hızlı Seçim Butonları -->
                     <div class="quick-select">
-                        <button id="selectAll" class="btn-secondary">✅ Tümünü Seç</button>
-                        <button id="selectNone" class="btn-secondary">❌ Hiçbirini Seçme</button>
+                        <button id="selectAll" class="btn-secondary" data-i18n="btnSelectAll">✅ Tümünü Seç</button>
+                        <button id="selectNone" class="btn-secondary" data-i18n="btnSelectNone">❌ Hiçbirini Seçme</button>
                     </div>
 
                     <!-- Temizle Butonu -->
                     <button id="cleanNow" class="btn-primary">
                         <span class="btn-icon">🚀</span>
-                        <span>Şimdi Temizle</span>
+                        <span data-i18n="btnCleanNow">Şimdi Temizle</span>
                     </button>
                 </div>
             </div>
@@ -135,15 +135,15 @@
             <!-- ZAMANLAMA SEKMESİ -->
             <div id="zamanlama" class="tab-panel">
                 <div class="section">
-                    <h3 class="section-title">⏱️ Otomatik Temizlik Zamanlaması</h3>
+                    <h3 class="section-title" data-i18n="scheduleTitle">⏱️ Otomatik Temizlik Zamanlaması</h3>
                     
                     <div class="checkbox-group">
                         <label class="checkbox-item toggle-item">
                             <input type="checkbox" id="cleanOnStartup">
                             <span class="toggle"></span>
                             <span class="label-text">
-                                <span class="label-title">🚀 Tarayıcı Açılışında</span>
-                                <span class="label-desc">Chrome her açıldığında temizle</span>
+                                <span class="label-title" data-i18n="scheduleOnStartup">🚀 Tarayıcı Açılışında</span>
+                                <span class="label-desc" data-i18n="scheduleOnStartupDesc">Chrome her açıldığında temizle</span>
                             </span>
                         </label>
 
@@ -151,8 +151,8 @@
                             <input type="checkbox" id="cleanOnShutdown">
                             <span class="toggle"></span>
                             <span class="label-text">
-                                <span class="label-title">🔒 Tarayıcı Kapanışında</span>
-                                <span class="label-desc">Chrome kapanırken temizle</span>
+                                <span class="label-title" data-i18n="scheduleOnShutdown">🔒 Tarayıcı Kapanışında</span>
+                                <span class="label-desc" data-i18n="scheduleOnShutdownDesc">Chrome kapanırken temizle</span>
                             </span>
                         </label>
 
@@ -160,24 +160,24 @@
                             <input type="checkbox" id="cleanOnInterval">
                             <span class="toggle"></span>
                             <span class="label-text">
-                                <span class="label-title">⏰ Zamanlayıcı ile</span>
-                                <span class="label-desc">Belirli aralıklarla temizle</span>
+                                <span class="label-title" data-i18n="scheduleOnInterval">⏰ Zamanlayıcı ile</span>
+                                <span class="label-desc" data-i18n="scheduleOnIntervalDesc">Belirli aralıklarla temizle</span>
                             </span>
                         </label>
                     </div>
 
                     <!-- Zamanlayıcı Ayarları -->
                     <div id="intervalSettings" class="interval-settings hidden">
-                        <h4>🕐 Temizlik Aralığı</h4>
+                        <h4 data-i18n="intervalTitle">🕐 Temizlik Aralığı</h4>
                         <div class="interval-row">
                             <input type="number" id="intervalValue" min="1" max="24" value="1">
                             <select id="intervalUnit">
-                                <option value="minutes">Dakika</option>
-                                <option value="hours" selected>Saat</option>
+                                <option value="minutes" data-i18n="intervalMinutes">Dakika</option>
+                                <option value="hours" selected data-i18n="intervalHours">Saat</option>
                             </select>
                         </div>
                         <p class="interval-info">
-                            <span id="nextClean">Sonraki temizlik: --</span>
+                            <span id="nextClean" data-i18n="nextClean">Sonraki temizlik: --</span>
                         </p>
                     </div>
 
@@ -185,13 +185,13 @@
                     <div class="schedule-status">
                         <div class="status-card">
                             <span class="status-icon" id="statusIcon">⏸️</span>
-                            <span class="status-text" id="statusText">Otomatik temizlik kapalı</span>
+                            <span class="status-text" id="statusText" data-i18n="statusOff">Otomatik temizlik kapalı</span>
                         </div>
                     </div>
 
                     <button id="saveSchedule" class="btn-primary">
                         <span class="btn-icon">💾</span>
-                        <span>Zamanlamayı Kaydet</span>
+                        <span data-i18n="btnSaveSchedule">Zamanlamayı Kaydet</span>
                     </button>
                 </div>
             </div>
@@ -199,15 +199,15 @@
             <!-- AYARLAR SEKMESİ -->
             <div id="ayarlar" class="tab-panel">
                 <div class="section">
-                    <h3 class="section-title">⚙️ Genel Ayarlar</h3>
+                    <h3 class="section-title" data-i18n="settingsTitle">⚙️ Genel Ayarlar</h3>
                     
                     <div class="checkbox-group">
                         <label class="checkbox-item toggle-item">
                             <input type="checkbox" id="showNotification" checked>
                             <span class="toggle"></span>
                             <span class="label-text">
-                                <span class="label-title">🔔 Bildirim Göster</span>
-                                <span class="label-desc">Temizlik sonrası bildirim al</span>
+                                <span class="label-title" data-i18n="settingNotification">🔔 Bildirim Göster</span>
+                                <span class="label-desc" data-i18n="settingNotificationDesc">Temizlik sonrası bildirim al</span>
                             </span>
                         </label>
 
@@ -215,8 +215,8 @@
                             <input type="checkbox" id="soundEnabled">
                             <span class="toggle"></span>
                             <span class="label-text">
-                                <span class="label-title">🔊 Ses Efekti</span>
-                                <span class="label-desc">Temizlik bitince ses çal</span>
+                                <span class="label-title" data-i18n="settingSound">🔊 Ses Efekti</span>
+                                <span class="label-desc" data-i18n="settingSoundDesc">Temizlik bitince ses çal</span>
                             </span>
                         </label>
 
@@ -224,8 +224,8 @@
                             <input type="checkbox" id="confirmBeforeClean">
                             <span class="toggle"></span>
                             <span class="label-text">
-                                <span class="label-title">❓ Onay İste</span>
-                                <span class="label-desc">Temizlemeden önce sor</span>
+                                <span class="label-title" data-i18n="settingConfirm">❓ Onay İste</span>
+                                <span class="label-desc" data-i18n="settingConfirmDesc">Temizlemeden önce sor</span>
                             </span>
                         </label>
                     </div>
@@ -234,22 +234,22 @@
 
                     <!-- İstatistikler -->
                     <div class="stats-section">
-                        <h4>📊 İstatistikler</h4>
+                        <h4 data-i18n="statsTitle">📊 İstatistikler</h4>
                         <div class="stats-grid">
                             <div class="stat-item">
                                 <span class="stat-value" id="totalCleans">0</span>
-                                <span class="stat-label">Toplam Temizlik</span>
+                                <span class="stat-label" data-i18n="statsTotalCleans">Toplam Temizlik</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-value" id="lastClean">Hiç</span>
-                                <span class="stat-label">Son Temizlik</span>
+                                <span class="stat-value" id="lastClean" data-i18n="statsNever">Hiç</span>
+                                <span class="stat-label" data-i18n="statsLastClean">Son Temizlik</span>
                             </div>
                         </div>
                     </div>
 
                     <button id="resetSettings" class="btn-danger">
                         <span class="btn-icon">🔄</span>
-                        <span>Ayarları Sıfırla</span>
+                        <span data-i18n="btnResetSettings">Ayarları Sıfırla</span>
                     </button>
                 </div>
             </div>
@@ -258,16 +258,15 @@
         <!-- Bildirim Alanı -->
         <div id="notification" class="notification hidden">
             <span class="notification-icon">✅</span>
-            <span class="notification-text">İşlem başarılı!</span>
+            <span class="notification-text" data-i18n="msgSuccess">İşlem başarılı!</span>
         </div>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>Tarayıcı Temizleyici Pro v1.0</p>
+            <p data-i18n="footerText">Tarayıcı Temizleyici Pro v1.0</p>
         </footer>
     </div>
 
     <script src="popup.js"></script>
 </body>
 </html>
-

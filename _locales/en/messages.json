@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Browser Cleaner Pro",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Clean your browser data automatically or manually. History, cookies, cache and more!",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Browser Cleaner",
+    "description": "Header title"
+  },
+  "headerSubtitle": {
+    "message": "Clean your data safely",
+    "description": "Header subtitle"
+  },
+  "tabCleaning": {
+    "message": "🗑️ Clean",
+    "description": "Cleaning tab"
+  },
+  "tabSchedule": {
+    "message": "⏰ Schedule",
+    "description": "Schedule tab"
+  },
+  "tabSettings": {
+    "message": "⚙️ Settings",
+    "description": "Settings tab"
+  },
+  "sectionSelectData": {
+    "message": "📋 Select Data to Clean",
+    "description": "Data selection section title"
+  },
+  "dataHistory": {
+    "message": "🌐 Browsing History",
+    "description": "Browsing history"
+  },
+  "dataHistoryDesc": {
+    "message": "Sites you've visited",
+    "description": "Browsing history description"
+  },
+  "dataCookies": {
+    "message": "🍪 Cookies",
+    "description": "Cookies"
+  },
+  "dataCookiesDesc": {
+    "message": "Site session data",
+    "description": "Cookies description"
+  },
+  "dataCache": {
+    "message": "📦 Cache",
+    "description": "Cache"
+  },
+  "dataCacheDesc": {
+    "message": "Temporary files and images",
+    "description": "Cache description"
+  },
+  "dataDownloads": {
+    "message": "📥 Download History",
+    "description": "Download history"
+  },
+  "dataDownloadsDesc": {
+    "message": "Downloaded files list",
+    "description": "Download history description"
+  },
+  "dataFormData": {
+    "message": "📝 Form Data",
+    "description": "Form data"
+  },
+  "dataFormDataDesc": {
+    "message": "Autofill information",
+    "description": "Form data description"
+  },
+  "dataLocalStorage": {
+    "message": "💾 Local Storage",
+    "description": "Local storage"
+  },
+  "dataLocalStorageDesc": {
+    "message": "Site data (localStorage)",
+    "description": "Local storage description"
+  },
+  "dataIndexedDB": {
+    "message": "🗄️ IndexedDB",
+    "description": "IndexedDB"
+  },
+  "dataIndexedDBDesc": {
+    "message": "Advanced site databases",
+    "description": "IndexedDB description"
+  },
+  "dataPasswords": {
+    "message": "🔐 Saved Passwords",
+    "description": "Passwords"
+  },
+  "dataPasswordsDesc": {
+    "message": "⚠️ Warning: Cannot be undone!",
+    "description": "Passwords warning"
+  },
+  "timeRangeTitle": {
+    "message": "🕐 Time Range",
+    "description": "Time range title"
+  },
+  "timeHour": {
+    "message": "Last 1 hour",
+    "description": "Last 1 hour"
+  },
+  "timeDay": {
+    "message": "Last 24 hours",
+    "description": "Last 24 hours"
+  },
+  "timeWeek": {
+    "message": "Last 1 week",
+    "description": "Last 1 week"
+  },
+  "timeMonth": {
+    "message": "Last 1 month",
+    "description": "Last 1 month"
+  },
+  "timeAll": {
+    "message": "All time",
+    "description": "All time"
+  },
+  "btnSelectAll": {
+    "message": "✅ Select All",
+    "description": "Select all button"
+  },
+  "btnSelectNone": {
+    "message": "❌ Select None",
+    "description": "Select none button"
+  },
+  "btnCleanNow": {
+    "message": "Clean Now",
+    "description": "Clean button"
+  },
+  "btnCleaning": {
+    "message": "Cleaning...",
+    "description": "Cleaning status"
+  },
+  "scheduleTitle": {
+    "message": "⏱️ Automatic Cleaning Schedule",
+    "description": "Schedule title"
+  },
+  "scheduleOnStartup": {
+    "message": "🚀 On Browser Startup",
+    "description": "Clean on startup"
+  },
+  "scheduleOnStartupDesc": {
+    "message": "Clean when Chrome opens",
+    "description": "Clean on startup description"
+  },
+  "scheduleOnShutdown": {
+    "message": "🔒 On Browser Shutdown",
+    "description": "Clean on shutdown"
+  },
+  "scheduleOnShutdownDesc": {
+    "message": "Clean when Chrome closes",
+    "description": "Clean on shutdown description"
+  },
+  "scheduleOnInterval": {
+    "message": "⏰ With Timer",
+    "description": "Timer"
+  },
+  "scheduleOnIntervalDesc": {
+    "message": "Clean at specific intervals",
+    "description": "Timer description"
+  },
+  "intervalTitle": {
+    "message": "🕐 Cleaning Interval",
+    "description": "Interval title"
+  },
+  "intervalMinutes": {
+    "message": "Minutes",
+    "description": "Minutes"
+  },
+  "intervalHours": {
+    "message": "Hours",
+    "description": "Hours"
+  },
+  "nextClean": {
+    "message": "Next clean:",
+    "description": "Next clean"
+  },
+  "statusOff": {
+    "message": "Automatic cleaning is off",
+    "description": "Off status"
+  },
+  "statusActive": {
+    "message": "Active:",
+    "description": "Active status"
+  },
+  "btnSaveSchedule": {
+    "message": "Save Schedule",
+    "description": "Save button"
+  },
+  "settingsTitle": {
+    "message": "⚙️ General Settings",
+    "description": "Settings title"
+  },
+  "settingNotification": {
+    "message": "🔔 Show Notification",
+    "description": "Notification setting"
+  },
+  "settingNotificationDesc": {
+    "message": "Get notified after cleaning",
+    "description": "Notification description"
+  },
+  "settingSound": {
+    "message": "🔊 Sound Effect",
+    "description": "Sound setting"
+  },
+  "settingSoundDesc": {
+    "message": "Play sound when done",
+    "description": "Sound description"
+  },
+  "settingConfirm": {
+    "message": "❓ Ask Confirmation",
+    "description": "Confirm setting"
+  },
+  "settingConfirmDesc": {
+    "message": "Ask before cleaning",
+    "description": "Confirm description"
+  },
+  "statsTitle": {
+    "message": "📊 Statistics",
+    "description": "Statistics title"
+  },
+  "statsTotalCleans": {
+    "message": "Total Cleans",
+    "description": "Total cleans"
+  },
+  "statsLastClean": {
+    "message": "Last Clean",
+    "description": "Last clean"
+  },
+  "statsNever": {
+    "message": "Never",
+    "description": "Never done"
+  },
+  "btnResetSettings": {
+    "message": "Reset Settings",
+    "description": "Reset button"
+  },
+  "msgSuccess": {
+    "message": "Operation successful!",
+    "description": "Success message"
+  },
+  "msgCleanSuccess": {
+    "message": "Cleaning completed successfully! ✨",
+    "description": "Clean success message"
+  },
+  "msgScheduleSaved": {
+    "message": "Schedule saved! ⏰",
+    "description": "Schedule saved"
+  },
+  "msgSettingsReset": {
+    "message": "Settings reset",
+    "description": "Settings reset"
+  },
+  "msgAllSelected": {
+    "message": "All options selected",
+    "description": "All selected"
+  },
+  "msgNoneSelected": {
+    "message": "All selections cleared",
+    "description": "None selected"
+  },
+  "msgError": {
+    "message": "An error occurred",
+    "description": "Error message"
+  },
+  "confirmClean": {
+    "message": "Are you sure you want to clean the selected data?",
+    "description": "Clean confirmation"
+  },
+  "confirmReset": {
+    "message": "Are you sure you want to reset all settings to default?",
+    "description": "Reset confirmation"
+  },
+  "footerText": {
+    "message": "Browser Cleaner Pro v1.0",
+    "description": "Footer text"
+  },
+  "timeAgo_justNow": {
+    "message": "Just now",
+    "description": "Just now"
+  },
+  "timeAgo_minutes": {
+    "message": "$1 min ago",
+    "description": "Minutes ago",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "timeAgo_hours": {
+    "message": "$1 hours ago",
+    "description": "Hours ago",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "timeAgo_days": {
+    "message": "$1 days ago",
+    "description": "Days ago",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,314 @@
+{
+  "extName": {
+    "message": "Tarayıcı Temizleyici Pro",
+    "description": "Eklenti adı"
+  },
+  "extDescription": {
+    "message": "Tarayıcı verilerinizi otomatik veya manuel olarak temizleyin. Geçmiş, çerezler, önbellek ve daha fazlası!",
+    "description": "Eklenti açıklaması"
+  },
+  "headerTitle": {
+    "message": "Tarayıcı Temizleyici",
+    "description": "Başlık"
+  },
+  "headerSubtitle": {
+    "message": "Verilerinizi güvenle temizleyin",
+    "description": "Alt başlık"
+  },
+  "tabCleaning": {
+    "message": "🗑️ Temizlik",
+    "description": "Temizlik sekmesi"
+  },
+  "tabSchedule": {
+    "message": "⏰ Zamanlama",
+    "description": "Zamanlama sekmesi"
+  },
+  "tabSettings": {
+    "message": "⚙️ Ayarlar",
+    "description": "Ayarlar sekmesi"
+  },
+  "sectionSelectData": {
+    "message": "📋 Temizlenecek Verileri Seçin",
+    "description": "Veri seçim bölümü başlığı"
+  },
+  "dataHistory": {
+    "message": "🌐 Tarama Geçmişi",
+    "description": "Tarama geçmişi"
+  },
+  "dataHistoryDesc": {
+    "message": "Ziyaret ettiğiniz siteler",
+    "description": "Tarama geçmişi açıklaması"
+  },
+  "dataCookies": {
+    "message": "🍪 Çerezler",
+    "description": "Çerezler"
+  },
+  "dataCookiesDesc": {
+    "message": "Site oturum verileri",
+    "description": "Çerezler açıklaması"
+  },
+  "dataCache": {
+    "message": "📦 Önbellek",
+    "description": "Önbellek"
+  },
+  "dataCacheDesc": {
+    "message": "Geçici dosyalar ve resimler",
+    "description": "Önbellek açıklaması"
+  },
+  "dataDownloads": {
+    "message": "📥 İndirme Geçmişi",
+    "description": "İndirme geçmişi"
+  },
+  "dataDownloadsDesc": {
+    "message": "İndirilen dosya listesi",
+    "description": "İndirme geçmişi açıklaması"
+  },
+  "dataFormData": {
+    "message": "📝 Form Verileri",
+    "description": "Form verileri"
+  },
+  "dataFormDataDesc": {
+    "message": "Otomatik doldurma bilgileri",
+    "description": "Form verileri açıklaması"
+  },
+  "dataLocalStorage": {
+    "message": "💾 Yerel Depolama",
+    "description": "Yerel depolama"
+  },
+  "dataLocalStorageDesc": {
+    "message": "Site verileri (localStorage)",
+    "description": "Yerel depolama açıklaması"
+  },
+  "dataIndexedDB": {
+    "message": "🗄️ IndexedDB",
+    "description": "IndexedDB"
+  },
+  "dataIndexedDBDesc": {
+    "message": "Gelişmiş site veritabanları",
+    "description": "IndexedDB açıklaması"
+  },
+  "dataPasswords": {
+    "message": "🔐 Kayıtlı Şifreler",
+    "description": "Şifreler"
+  },
+  "dataPasswordsDesc": {
+    "message": "⚠️ Dikkat: Geri alınamaz!",
+    "description": "Şifreler uyarısı"
+  },
+  "timeRangeTitle": {
+    "message": "🕐 Zaman Aralığı",
+    "description": "Zaman aralığı başlığı"
+  },
+  "timeHour": {
+    "message": "Son 1 saat",
+    "description": "Son 1 saat"
+  },
+  "timeDay": {
+    "message": "Son 24 saat",
+    "description": "Son 24 saat"
+  },
+  "timeWeek": {
+    "message": "Son 1 hafta",
+    "description": "Son 1 hafta"
+  },
+  "timeMonth": {
+    "message": "Son 1 ay",
+    "description": "Son 1 ay"
+  },
+  "timeAll": {
+    "message": "Tüm zamanlar",
+    "description": "Tüm zamanlar"
+  },
+  "btnSelectAll": {
+    "message": "✅ Tümünü Seç",
+    "description": "Tümünü seç butonu"
+  },
+  "btnSelectNone": {
+    "message": "❌ Hiçbirini Seçme",
+    "description": "Hiçbirini seçme butonu"
+  },
+  "btnCleanNow": {
+    "message": "Şimdi Temizle",
+    "description": "Temizle butonu"
+  },
+  "btnCleaning": {
+    "message": "Temizleniyor...",
+    "description": "Temizleniyor durumu"
+  },
+  "scheduleTitle": {
+    "message": "⏱️ Otomatik Temizlik Zamanlaması",
+    "description": "Zamanlama başlığı"
+  },
+  "scheduleOnStartup": {
+    "message": "🚀 Tarayıcı Açılışında",
+    "description": "Açılışta temizlik"
+  },
+  "scheduleOnStartupDesc": {
+    "message": "Chrome her açıldığında temizle",
+    "description": "Açılışta temizlik açıklaması"
+  },
+  "scheduleOnShutdown": {
+    "message": "🔒 Tarayıcı Kapanışında",
+    "description": "Kapanışta temizlik"
+  },
+  "scheduleOnShutdownDesc": {
+    "message": "Chrome kapanırken temizle",
+    "description": "Kapanışta temizlik açıklaması"
+  },
+  "scheduleOnInterval": {
+    "message": "⏰ Zamanlayıcı ile",
+    "description": "Zamanlayıcı"
+  },
+  "scheduleOnIntervalDesc": {
+    "message": "Belirli aralıklarla temizle",
+    "description": "Zamanlayıcı açıklaması"
+  },
+  "intervalTitle": {
+    "message": "🕐 Temizlik Aralığı",
+    "description": "Aralık başlığı"
+  },
+  "intervalMinutes": {
+    "message": "Dakika",
+    "description": "Dakika"
+  },
+  "intervalHours": {
+    "message": "Saat",
+    "description": "Saat"
+  },
+  "nextClean": {
+    "message": "Sonraki temizlik:",
+    "description": "Sonraki temizlik"
+  },
+  "statusOff": {
+    "message": "Otomatik temizlik kapalı",
+    "description": "Kapalı durumu"
+  },
+  "statusActive": {
+    "message": "Aktif:",
+    "description": "Aktif durumu"
+  },
+  "btnSaveSchedule": {
+    "message": "Zamanlamayı Kaydet",
+    "description": "Kaydet butonu"
+  },
+  "settingsTitle": {
+    "message": "⚙️ Genel Ayarlar",
+    "description": "Ayarlar başlığı"
+  },
+  "settingNotification": {
+    "message": "🔔 Bildirim Göster",
+    "description": "Bildirim ayarı"
+  },
+  "settingNotificationDesc": {
+    "message": "Temizlik sonrası bildirim al",
+    "description": "Bildirim açıklaması"
+  },
+  "settingSound": {
+    "message": "🔊 Ses Efekti",
+    "description": "Ses ayarı"
+  },
+  "settingSoundDesc": {
+    "message": "Temizlik bitince ses çal",
+    "description": "Ses açıklaması"
+  },
+  "settingConfirm": {
+    "message": "❓ Onay İste",
+    "description": "Onay ayarı"
+  },
+  "settingConfirmDesc": {
+    "message": "Temizlemeden önce sor",
+    "description": "Onay açıklaması"
+  },
+  "statsTitle": {
+    "message": "📊 İstatistikler",
+    "description": "İstatistik başlığı"
+  },
+  "statsTotalCleans": {
+    "message": "Toplam Temizlik",
+    "description": "Toplam temizlik"
+  },
+  "statsLastClean": {
+    "message": "Son Temizlik",
+    "description": "Son temizlik"
+  },
+  "statsNever": {
+    "message": "Hiç",
+    "description": "Hiç yapılmadı"
+  },
+  "btnResetSettings": {
+    "message": "Ayarları Sıfırla",
+    "description": "Sıfırla butonu"
+  },
+  "msgSuccess": {
+    "message": "İşlem başarılı!",
+    "description": "Başarı mesajı"
+  },
+  "msgCleanSuccess": {
+    "message": "Temizlik başarıyla tamamlandı! ✨",
+    "description": "Temizlik başarı mesajı"
+  },
+  "msgScheduleSaved": {
+    "message": "Zamanlama kaydedildi! ⏰",
+    "description": "Zamanlama kaydedildi"
+  },
+  "msgSettingsReset": {
+    "message": "Ayarlar sıfırlandı",
+    "description": "Ayarlar sıfırlandı"
+  },
+  "msgAllSelected": {
+    "message": "Tüm seçenekler işaretlendi",
+    "description": "Tümü seçildi"
+  },
+  "msgNoneSelected": {
+    "message": "Tüm seçimler kaldırıldı",
+    "description": "Hiçbiri seçilmedi"
+  },
+  "msgError": {
+    "message": "Bir hata oluştu",
+    "description": "Hata mesajı"
+  },
+  "confirmClean": {
+    "message": "Seçili verileri temizlemek istediğinizden emin misiniz?",
+    "description": "Temizlik onayı"
+  },
+  "confirmReset": {
+    "message": "Tüm ayarları varsayılana döndürmek istediğinizden emin misiniz?",
+    "description": "Sıfırlama onayı"
+  },
+  "footerText": {
+    "message": "Tarayıcı Temizleyici Pro v1.0",
+    "description": "Footer metni"
+  },
+  "timeAgo_justNow": {
+    "message": "Az önce",
+    "description": "Az önce"
+  },
+  "timeAgo_minutes": {
+    "message": "$1 dk önce",
+    "description": "Dakika önce",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "timeAgo_hours": {
+    "message": "$1 saat önce",
+    "description": "Saat önce",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "timeAgo_days": {
+    "message": "$1 gün önce",
+    "description": "Gün önce",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  }
+}
+

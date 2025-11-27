@@ -1,0 +1,265 @@
+================================================================================
+        🧹 CHROME WEB STORE - DİKKAT ÇEKİCİ AÇIKLAMA
+================================================================================
+
+📝 EKLENTI ADI (45 karakter):
+-----------------------------
+Tarayıcı Temizleyici Pro | Privacy Cleaner
+
+
+📝 KISA AÇIKLAMA (132 karakter):
+--------------------------------
+🧹 Tek tıkla gizliliğini koru! Geçmiş, çerez, önbellek temizle. Otomatik mod: Açılış, kapanış, zamanlayıcı. Hızlı, güvenli, ücretsiz!
+
+
+================================================================================
+                    📋 DETAYLI AÇIKLAMA (Türkçe)
+================================================================================
+
+🛡️ GİZLİLİĞİNİ TEK TIKLA KORU!
+
+İnternette gezinirken arkanda izler bırakıyorsun. Tarayıcı Temizleyici Pro ile dijital ayak izlerini sil, gizliliğini maksimum seviyeye çıkar!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 NEDEN TARAYICI TEMİZLEYİCİ PRO?
+
+✅ %100 ÜCRETSİZ - Gizli ücret yok!
+✅ REKLAMSIZ - Temiz deneyim
+✅ VERİ TOPLAMAZ - Gizliliğin bizim için öncelik
+✅ AÇIK KAYNAK - GitHub'da kodlarımızı incele
+✅ TÜRKÇE ARAYÜZ - Ana dilinde kullan
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🗑️ TEMİZLEYEBİLECEĞİN VERİLER:
+
+🌐 Tarama Geçmişi
+   → Hangi siteleri ziyaret ettiğini kimse görmesin
+
+🍪 Çerezler (Cookies)  
+   → İzleme çerezlerinden kurtul, reklamcıları engelle
+
+📦 Önbellek (Cache)
+   → Disk alanı kazan, tarayıcını hızlandır
+
+📥 İndirme Geçmişi
+   → Ne indirdiğin senin sırrın kalsın
+
+📝 Form Verileri
+   → Otomatik doldurma bilgilerini temizle
+
+💾 Yerel Depolama
+   → Site verilerini sıfırla
+
+🗄️ IndexedDB
+   → Gelişmiş site verilerini kaldır
+
+🔐 Kayıtlı Şifreler
+   → Gerektiğinde şifreleri de temizle
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏰ AKILLI OTOMATİK TEMİZLİK:
+
+🚀 AÇILIŞTA TEMİZLE
+   Her oturuma temiz başla!
+
+🔒 KAPANIŞTA TEMİZLE  
+   Bilgisayarı bırakırken iz bırakma!
+
+⏱️ ZAMANLAY ICI
+   Her saat, her 30 dakika... Sen ayarla!
+
+💡 HEPSİ BİRDEN
+   Maksimum gizlilik için hepsini aç!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🕐 ESNEK ZAMAN ARALIĞI:
+
+⏱️ Son 1 saat
+📅 Son 24 saat  
+📆 Son 1 hafta
+🗓️ Son 1 ay
+🌍 Tüm zamanlar
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 MODERN & ŞIK TASARIM:
+
+◾ Göz yormayan koyu tema
+◾ Sezgisel kullanıcı arayüzü
+◾ Hızlı erişim butonları
+◾ Akıcı animasyonlar
+◾ Bildirim sistemi
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 İSTATİSTİKLER:
+
+Kaç kez temizlik yaptığını ve en son ne zaman temizlediğini takip et!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔒 GİZLİLİK GARANTİSİ:
+
+⭐ Hiçbir verinizi TOPLAMIYORUZ
+⭐ Hiçbir sunucuya veri GÖNDERMİYORUZ  
+⭐ Tamamen YEREL çalışır
+⭐ Açık kaynak - GitHub'da kontrol edin!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💻 DESTEKLENEN TARAYICILAR:
+
+✓ Google Chrome
+✓ Microsoft Edge
+✓ Brave Browser
+✓ Opera
+✓ Vivaldi
+✓ Tüm Chromium tabanlı tarayıcılar
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⬇️ HEMEN İNDİR, GİZLİLİĞİNİ KORUMAYA BAŞLA!
+
+Sorularınız mı var? GitHub sayfamızdan bize ulaşın:
+https://github.com/kerem-gumus/TarayiciTemizleyici-Extension
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏷️ Etiketler: temizleyici, gizlilik, çerez temizleme, geçmiş silme, 
+önbellek, privacy, cleaner, cookies, history, cache, türkçe
+
+
+================================================================================
+                    📋 DETAILED DESCRIPTION (English)
+================================================================================
+
+🛡️ PROTECT YOUR PRIVACY WITH ONE CLICK!
+
+You leave traces while browsing the internet. With Browser Cleaner Pro, erase your digital footprints and maximize your privacy!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 WHY BROWSER CLEANER PRO?
+
+✅ 100% FREE - No hidden costs!
+✅ AD-FREE - Clean experience
+✅ NO DATA COLLECTION - Your privacy is our priority
+✅ OPEN SOURCE - Check our code on GitHub
+✅ MULTI-LANGUAGE - Turkish & English support
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🗑️ DATA YOU CAN CLEAN:
+
+🌐 Browsing History
+   → Don't let anyone see which sites you visited
+
+🍪 Cookies
+   → Get rid of tracking cookies, block advertisers
+
+📦 Cache
+   → Free up disk space, speed up your browser
+
+📥 Download History
+   → Keep what you downloaded private
+
+📝 Form Data
+   → Clear autofill information
+
+💾 Local Storage
+   → Reset site data
+
+🗄️ IndexedDB
+   → Remove advanced site databases
+
+🔐 Saved Passwords
+   → Clean passwords when needed
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏰ SMART AUTO-CLEANING:
+
+🚀 CLEAN ON STARTUP
+   Start every session fresh!
+
+🔒 CLEAN ON SHUTDOWN
+   Leave no trace when you're done!
+
+⏱️ SCHEDULED CLEANING
+   Every hour, every 30 minutes... You decide!
+
+💡 ALL AT ONCE
+   Enable all for maximum privacy!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🕐 FLEXIBLE TIME RANGE:
+
+⏱️ Last 1 hour
+📅 Last 24 hours
+📆 Last week
+🗓️ Last month
+🌍 All time
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 MODERN & SLEEK DESIGN:
+
+◾ Eye-friendly dark theme
+◾ Intuitive user interface
+◾ Quick access buttons
+◾ Smooth animations
+◾ Notification system
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔒 PRIVACY GUARANTEE:
+
+⭐ We DON'T collect any data
+⭐ We DON'T send data to any server
+⭐ Works completely LOCALLY
+⭐ Open source - Check it on GitHub!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⬇️ DOWNLOAD NOW AND START PROTECTING YOUR PRIVACY!
+
+Questions? Reach us on GitHub:
+https://github.com/kerem-gumus/TarayiciTemizleyici-Extension
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏷️ Tags: cleaner, privacy, cookie cleaner, history eraser,
+cache, browser cleaner, data eraser, auto clean
+
+
+================================================================================
+          ⭐ MAĞAZA SAYFASI İÇİN EK BİLGİLER
+================================================================================
+
+📌 KATEGORİ: Üretkenlik (Productivity)
+
+📌 TÜM YAŞLAR İÇİN UYGUN: Evet
+
+📌 ANAHTAR KELİMELER:
+- tarayıcı temizleyici
+- çerez silici
+- geçmiş temizleme
+- önbellek temizleme
+- gizlilik
+- privacy cleaner
+- cookie cleaner
+- history eraser
+- cache cleaner
+- browser cleaner
+
+📌 WEB SİTESİ: https://github.com/kerem-gumus/TarayiciTemizleyici-Extension
+
+📌 DESTEK E-POSTASI: (Kendi e-postanızı ekleyin)
+
+================================================================================
+
